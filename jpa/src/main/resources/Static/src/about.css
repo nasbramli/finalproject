@@ -1,0 +1,310 @@
+*, *::before, *::after{
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    border: none;
+}
+
+.body{
+    font-family: Arial, Helvetica, sans-serif;
+    color: black;
+    background-color: white;
+    overflow-x: hidden;
+}
+
+.container{
+    width: 80%;
+    margin: 0 auto;
+}
+
+.profilepict{
+    width: 2.7rem;
+    aspect-ratio: 1/1;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+img{
+    display: block;
+    width: 100%;
+}
+
+.btn {
+    display:inline-block;
+    padding: 0.6rem 1rem;/*15:12*/
+    font-weight: 500;
+    border-radius: 2rem;
+    cursor: pointer;
+    transition: all 300ms ease;
+    font-size: 0.9rem;
+}
+
+.btn:hover{
+    opacity: 0.8;
+}
+
+.btn-primary{
+    background: black;
+    color: white;
+}
+
+.text-bold{
+    font-weight: 500;
+}
+
+.text-muted{
+    color: gray;
+}
+
+/* NAVBAR */
+nav{
+    width: 100%;
+    background: #cffbfd;
+    padding: 0.7rem 0;
+    position: fixed;
+    top: 0;
+    z-index: 10;/*forcing it to be on top*/
+}
+
+nav .tglogohome{
+    font-size: 24px;
+    font-family: Snell Roundhand, cursive;
+    color: black;
+    font-size: xx-large;
+}
+
+nav .container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+nav .menu{
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+
+/*MAIN*/
+main{
+    position: relative;
+    top: 5.4rem;
+}
+
+main .container{
+    display: grid;
+    column-gap: 2rem;
+}
+
+/*-- TOP BANNER --*/
+main .container .top{
+    height: fit-content;
+    padding: 5.4rem 0;
+    display: flex;
+    
+}
+
+main .container .top .topbannerpic{
+    padding: 1rem;
+    border-radius: 50%;
+    display: flex;
+    object-fit: contain;
+    width: 50%;
+}
+
+main .container .top .topbanner_text{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+
+/*-- END OF TOP BANNER --*/
+
+/*-- MIDDLE BANNER --*/
+
+main .container .middle{
+    height: fit-content;
+    padding: 5.4rem 0;
+    display: flex;  
+}
+
+main .container .middle .midbannerpic{
+    padding: 1rem;
+    border-radius: 50%;
+    display: flex;
+    object-fit: contain;
+    width: 50%;
+}
+
+main .container .middle .midbanner_text{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+/*-- END OF MIDDLE --*/
+
+/*-- BOTTOM --*/
+
+main .container .bottom{
+    height: fit-content;
+    padding: 5.4rem 0;
+    display: flex;  
+}
+
+main .container .bottom .bottombannerpic{
+    padding: 1rem;
+    border-radius: 50%;
+    display: flex;
+    object-fit: contain;
+    width: 50%;
+    margin-bottom: 2rem;
+}
+
+main .container .bottom .bottombanner_text{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+/*-- BOTTOM --*/
+
+main .container .bottom{
+    height: fit-content;
+    padding: 5.4rem 0;
+    display: flex;  
+}
+
+/* footer section - START */
+footer {
+    border-top: 1px solid rgb(0, 0, 0, 0.2);
+    color: rgb(0, 0, 0, 0.6);
+    font-size: small;
+    display: flex;
+    bottom: 0;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.copyright {
+    display: flex;
+    align-items: center;
+    text-align: left;
+    float: left;
+    left: 0;
+    padding-left: 24px;
+}
+
+.policies {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    float:right;
+    text-align: right;
+    padding-right: 24px;
+}
+
+.policies li, .policies li a {
+    text-decoration: none;
+    color: rgb(0, 0, 0, 0.6);
+    padding-left: 16px;
+}
+/* footer section - END */
+
+
+/*== RESPONSIVE for smaller screens====*/
+@media screen and (max-width:1200px){
+    .container{
+        width: 96%
+    }
+
+    nav .container .tglogohome{
+        margin-left: 1rem;
+    }
+
+    main .container{
+        grid-template-rows: auto auto;
+        gap: 1rem;
+    }
+
+    main .container .left .profile{
+        display: none;
+    }
+
+    main .container .bottom .bottombanner_text h1{
+        font-size: x-large;
+    }
+
+    main .container .middle .midbanner_text h1{
+        font-size: x-large;
+    }
+
+    main .container .top .topbanner_text h1{
+        font-size: x-large;
+    }
+
+
+}
+
+/*=== Responsive for mobile ===*/
+@media screen and (max-width:992px){
+
+    nav .container .tglogohome{
+        margin-left: 1rem;
+    }
+    
+    nav .container .profilepict{
+        display: none;
+    }
+
+    main .container{
+        grid-template-rows: auto auto;
+    }
+
+    main .container .bottom .bottombanner_text h1{
+        font-size: large;
+    }
+
+    main .container .middle .midbanner_text h1{
+        font-size: large;
+    }
+
+    main .container .top .topbanner_text h1{
+        font-size: large;
+    }
+}
+
+/*=== Responsive for mobile ===*/
+@media screen and (max-width:632px){
+
+    nav .container .tglogohome{
+        font-size: large;
+    }
+    
+    nav .container .profilepict{
+        display: none;
+    }
+
+    main .container{
+        grid-template-rows: auto auto;
+    }
+
+    main .container .bottom .bottombanner_text h1{
+        font-size: large;
+    }
+
+    main .container .middle .midbanner_text h1{
+        font-size: large;
+    }
+
+    main .container .top .topbanner_text h1{
+        font-size: large;
+    }
+}

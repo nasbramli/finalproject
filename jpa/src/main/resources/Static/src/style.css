@@ -1,0 +1,193 @@
+body {
+    margin: 0;
+    font-family: 'Gill Sans', sans-serif;
+    word-break: normal;
+	color: black;
+    background-color: white;
+    overflow-x: hidden;
+	margin: 2rem;
+}
+
+*, *::before, *::after{
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    border: none;
+}
+
+.container{
+    width: 80%;
+    margin: 0 auto;
+}
+
+.profilepict{
+    width: 2.7rem;
+    aspect-ratio: 1/1;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+img{
+    display: block;
+    width: 100%;
+}
+
+.btn {
+    display:inline-block;
+    padding: 0.6rem 1rem;/*15:12*/
+    font-weight: 500;
+    border-radius: 2rem;
+    cursor: pointer;
+    transition: all 300ms ease;
+    font-size: 0.9rem;
+}
+
+.btn:hover{
+    opacity: 0.8;
+}
+
+.btn-primary{
+    background: black;
+    color: white;
+}
+
+.text-bold{
+    font-weight: 500;
+}
+
+.text-muted{
+    color: gray;
+}
+
+/* NAVBAR */
+nav{
+    width: 100%;
+    background: #cffbfd;
+   
+    position: fixed;
+    top: 0;
+    z-index: 10;/*forcing it to be on top*/
+}
+
+nav .tglogohome{
+    font-size: 24px;
+    font-family: Snell Roundhand, cursive;
+    color: black;
+    font-size: xx-large;
+}
+
+nav .container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+nav .log-out{
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+
+nav .menu{
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+
+/*SIDEBAR*/
+
+
+.left .btn{
+    margin: 1rem 0;
+    width: 100%;
+    text-align: center;
+    padding: 1rem 0;
+}
+
+/* bottom banner -START */
+.addcontainer{
+	margin: 0 10rem;
+}
+
+.bottombanner-wrap {
+    display: block;
+    box-sizing: padding-box;
+    padding: 20px 56px;
+    background-color: rgba(0, 0, 0, .1);
+    height: 100%;
+	border-radius: 2rem;
+	margin-top: 5rem;
+	justify-content: center;
+}
+
+.bottombanner {
+    display: flex;
+    flex-direction: column;
+    color: rgb(0, 0, 0, 0.6);
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+    margin: 1rem;
+    padding-bottom: 2rem;
+}
+
+.bottombanner h1 {
+    font-size: xx-large;
+    font-weight: bold;
+    padding: 32px 0;
+    margin: 0;
+    color: rgb(0, 0, 0, 0.6);
+}
+
+.all-cards-container {
+    list-style: none;
+    display:grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: 32px;
+}
+
+/* Applied when the cart is empty */
+.no-products{
+    font-size: x-large;
+    font-style: italic;
+    align-items: center;
+}
+
+.crop {
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+}
+
+.card-container {
+    display: inline-block;
+    background-color: white;
+    padding-bottom: 32px;
+	border-radius: 2rem;
+}
+
+.card-container img {
+    width: 100%;
+    height: auto;
+	padding-top: 40px;
+}
+
+.card-container h3 {
+    font-size: 1.5em;
+    padding-top: 16px;
+    padding-left: 16px;
+    padding-bottom: 1em;
+    margin: 0;
+}
+
+.card-container p {
+    font-weight: lighter;
+    font-size: 1.2em;
+    padding-bottom: 8px;
+    padding-left: 16px;
+    padding-right: 16px;
+}
+/* bottom banner - END */

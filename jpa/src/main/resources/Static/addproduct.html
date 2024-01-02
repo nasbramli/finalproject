@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link rel="stylesheet" type="text/css" href="src/style.css" />
+
+    <!-- Bootstrap 5 inclusions -->
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <title>Travellelogram - Create Post</title>
+</head>
+
+<body>
+
+    <nav>
+        <div class="container">
+            <h2 class="tglogohome">Travellelogram</h2>
+            <a class="menu" href="cards.html">
+                <div class="profilepict">
+                    <img src="media/images/profile.JPG">
+                </div>
+                <div class="handle" href="cards.html">
+                    <h4>Nas</h4>
+                    <p class="text-muted">
+                        @nasty
+                    </p>
+                </div>
+            </a>
+        </div>
+    </nav>
+
+    <!-- toast section -->
+
+    <!-- Bootstrap 5 inclusions -->
+    <!-- https://getbootstrap.com/docs/5.0/components/toasts/ -->
+    <!-- Flexbox container for aligning the toasts -->
+    <div aria-live="polite" aria-atomic="true" class="d-flex justify-content-center align-items-center w-100">
+
+        <!-- Then put toasts within -->
+        <div class="toast" role="alert" aria-live="assertive" aria-atomic="true" data-bs-autohide="false">
+        <div class="toast-header">
+            <strong class="me-auto">Post Created</strong>
+            <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
+        </div>
+        <div class="toast-body">
+            Close [x] to see latest post.
+        </div>
+        </div>
+    </div>
+
+    <!-- form section -->
+    <div class="addcontainer">
+        <h1 class="my-5">Add new Product</h1>
+        <div class="row">
+            <div class="col">
+                <form id="productForm">
+                    <div class="form-group">
+                        <label for="productTitle">Name</label>
+                        <input type="text" class="form-control" id="productTitle">
+                    </div>
+                    <div class="form-group">
+                        <label for="productContent">Content</label>
+                        <textarea type="text" class="form-control" id="productContent"></textarea>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="productImageUrl">Image URL</label>
+                        <input type="text" class="form-control" id="productImageUrl">
+                    </div>                    
+                    
+                    <button type="submit" class="btn btn-primary btn-block mt-4">Save Item</button>
+                </form>
+            </div>
+        </div>
+    </div>
+   
+    <!-- Bootstrap 5 inclusions -->
+    <!-- Bootstrap 5 dependencies -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+        
+
+    <script src="src/controller.js"></script>
+    <script src="src/addproduct.js"></script>
+    
+</body>
+
+</html>
